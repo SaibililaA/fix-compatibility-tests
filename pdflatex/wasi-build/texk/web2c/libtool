@@ -1,5 +1,5 @@
 #! /bin/bash
-# Generated automatically by config.lt (web2c) 2027/dev
+# Generated automatically by config.status (web2c) 2027/dev
 # NOTE: Changes made to this file will be lost: look at ltmain.sh.
 
 # Provide generalized library-building support services.
@@ -99,7 +99,7 @@ EGREP="/usr/bin/grep -E"
 FGREP="/usr/bin/grep -F"
 
 # A BSD- or MS-compatible name lister.
-NM="/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/llvm-nm"
+NM="nm"
 
 # Whether we need soft or hard links.
 LN_S="ln -s"
@@ -147,7 +147,7 @@ want_nocaseglob="no"
 sharedlib_from_linklib_cmd="printf %s\\n"
 
 # The archiver.
-AR="/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/llvm-ar"
+AR="/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-33.0-x86_64-linux/bin/llvm-ar"
 
 # Flags to create an archive (by configure).
 lt_ar_flags=cr
@@ -159,10 +159,10 @@ AR_FLAGS=${ARFLAGS-"$lt_ar_flags"}
 archiver_list_spec="@"
 
 # A symbol stripping program.
-STRIP="/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/llvm-strip"
+STRIP="strip"
 
 # Commands used to install an old-style archive.
-RANLIB="/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/llvm-ranlib"
+RANLIB="/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-33.0-x86_64-linux/bin/llvm-ranlib"
 old_postinstall_cmds="chmod 644 \$oldlib~\$RANLIB \$tool_oldlib"
 old_postuninstall_cmds=""
 
@@ -170,16 +170,16 @@ old_postuninstall_cmds=""
 lock_old_archive_extraction=no
 
 # A C compiler.
-LTCC="/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/clang --target=wasm32-wasip1 --sysroot=/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot -std=gnu23"
+LTCC="/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-33.0-x86_64-linux/bin/clang -std=gnu23"
 
 # LTCC compiler flags.
-LTCFLAGS="-O2 -g0"
+LTCFLAGS="--target=wasm32-wasip1 --sysroot=/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot -O2 -I/home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-compatibility -include /home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-compatibility/wasi-compatibility.h"
 
 # Take the output of nm and produce a listing of raw symbols and C names.
-global_symbol_pipe="/usr/bin/sed -n -e 's/^.*[	 ]\\([ABCDGIRSTW][ABCDGIRSTW]*\\)[	 ][	 ]*\\([_A-Za-z][_A-Za-z0-9]*\\)\$/\\1 \\2 \\2/p' | /usr/bin/sed '/ __gnu_lto/d'"
+global_symbol_pipe=""
 
 # Transform the output of nm in a proper C declaration.
-global_symbol_to_cdecl="/usr/bin/sed -n -e 's/^T .* \\(.*\\)\$/extern int \\1();/p' -e 's/^[ABCDGIRSTW][ABCDGIRSTW]* .* \\(.*\\)\$/extern char \\1;/p'"
+global_symbol_to_cdecl=""
 
 # Transform the output of nm into a list of symbols to manually relocate.
 global_symbol_to_import=""
@@ -290,7 +290,7 @@ finish_eval=""
 hardcode_into_libs=no
 
 # Compile-time system search path for libraries.
-sys_lib_search_path_spec="/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/lib/clang/22 /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/lib/clang/22/lib/wasm32-unknown-wasip1 /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot/lib/wasm32-wasip1/noeh /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot/lib/wasm32-wasip1 "
+sys_lib_search_path_spec="/home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-33.0-x86_64-linux/lib/clang/22 /home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-33.0-x86_64-linux/lib/clang/22/lib/wasm32-unknown-wasip1 /home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot/lib/wasm32-wasip1/noeh /home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot/lib/wasm32-wasip1 "
 
 # Detected run-time system search path for libraries.
 sys_lib_dlsearch_path_spec="/lib /usr/lib"
@@ -308,8 +308,8 @@ dlopen_self=unknown
 dlopen_self_static=unknown
 
 # Commands to strip libraries.
-old_striplib="/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/llvm-strip --strip-debug"
-striplib="/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/llvm-strip --strip-unneeded"
+old_striplib="strip --strip-debug"
+striplib="strip --strip-unneeded"
 
 
 # The linker used to build libraries.
@@ -323,7 +323,7 @@ reload_cmds="\$LD\$reload_flag -o \$output\$reload_objs"
 old_archive_cmds="\$AR \$AR_FLAGS \$oldlib\$oldobjs~\$RANLIB \$tool_oldlib"
 
 # A language specific compiler.
-CC="/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/clang --target=wasm32-wasip1 --sysroot=/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot -std=gnu23"
+CC="/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-33.0-x86_64-linux/bin/clang -std=gnu23"
 
 # Is the compiler the GNU compiler?
 with_gcc=yes
@@ -12056,7 +12056,7 @@ reload_cmds="\$LD\$reload_flag -o \$output\$reload_objs"
 old_archive_cmds="\$AR \$AR_FLAGS \$oldlib\$oldobjs~\$RANLIB \$tool_oldlib"
 
 # A language specific compiler.
-CC="/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/clang++ --target=wasm32-wasip1 --sysroot=/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot"
+CC="g++"
 
 # Is the compiler the GNU compiler?
 with_gcc=yes
@@ -12071,7 +12071,7 @@ pic_flag=" -fPIC -DPIC"
 wl="-Wl,"
 
 # Compiler flag to prevent dynamic linking.
-link_static_flag="-static"
+link_static_flag=""
 
 # Does compiler simultaneously support -c and -o options?
 compiler_c_o="yes"
@@ -12177,17 +12177,17 @@ file_list_spec=""
 hardcode_action=immediate
 
 # The directories searched by this compiler when creating a shared library.
-compiler_lib_search_dirs="/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/lib/clang/22/lib/wasm32-unknown-wasip1 /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot/lib/wasm32-wasip1/noeh /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot/lib/wasm32-wasip1"
+compiler_lib_search_dirs="/usr/lib/gcc/x86_64-linux-gnu/15 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu /usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib /lib/x86_64-linux-gnu /lib/../lib /usr/lib/x86_64-linux-gnu /usr/lib/../lib /usr/lib/gcc/x86_64-linux-gnu/15/../../.. /lib /usr/lib"
 
 # Dependencies to place before and after the objects being linked to
 # create a shared library.
-predep_objects="/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot/lib/wasm32-wasip1/crt1-reactor.o"
-postdep_objects=""
+predep_objects="/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o"
+postdep_objects="/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o"
 predeps=""
-postdeps="-lc++ -lc++abi -lc"
+postdeps="-lstdc++ -lm -lgcc_s -lc -lgcc_s"
 
 # The library search path used internally by the compiler when linking
 # a shared library.
-compiler_lib_search_path="-L/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/lib/clang/22/lib/wasm32-unknown-wasip1 -L/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot/lib/wasm32-wasip1/noeh -L/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot/lib/wasm32-wasip1"
+compiler_lib_search_path="-L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib"
 
 # ### END LIBTOOL TAG CONFIG: CXX

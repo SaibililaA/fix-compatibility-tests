@@ -13,7 +13,7 @@
 # PARTICULAR PURPOSE.
 
 
-VPATH = ../../texlive-source/doc
+VPATH = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/doc
 am__is_gnu_make = { \
   if test -z '$(MAKELEVEL)'; then \
     false; \
@@ -321,33 +321,33 @@ am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)
 am__DIST_COMMON = $(srcdir)/Makefile.in $(tlbuild_TEXINFOS) \
 	$(top_srcdir)/build-aux/texinfo.tex ChangeLog
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} '/home/haibib/fix-project/compatibility/texlive-source/build-aux/missing' aclocal-1.18
+ACLOCAL = ${SHELL} '/home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/build-aux/missing' aclocal-1.18
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
-AR = /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/llvm-ar
+AR = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-33.0-x86_64-linux/bin/llvm-ar
 AS = as
-AUTOCONF = ${SHELL} '/home/haibib/fix-project/compatibility/texlive-source/build-aux/missing' autoconf
-AUTOHEADER = ${SHELL} '/home/haibib/fix-project/compatibility/texlive-source/build-aux/missing' autoheader
-AUTOMAKE = ${SHELL} '/home/haibib/fix-project/compatibility/texlive-source/build-aux/missing' automake-1.18
+AUTOCONF = ${SHELL} '/home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/build-aux/missing' autoconf
+AUTOHEADER = ${SHELL} '/home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/build-aux/missing' autoheader
+AUTOMAKE = ${SHELL} '/home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/build-aux/missing' automake-1.18
 AWK = gawk
-CC = /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/clang --target=wasm32-wasip1 --sysroot=/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot -std=gnu23
+CC = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-33.0-x86_64-linux/bin/clang -std=gnu23
 CCDEPMODE = depmode=gcc3
-CFLAGS = -O2 -g0
+CFLAGS = --target=wasm32-wasip1 --sysroot=/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot -O2 -I/home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-compatibility -include /home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-compatibility/wasi-compatibility.h
 CONF_SUBDIRS = texk/kpathsea texk/ptexenc 
-CPP = /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/clang --target=wasm32-wasip1 --sysroot=/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot -std=gnu23 -E
+CPP = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-33.0-x86_64-linux/bin/clang -std=gnu23 -E
 CPPFLAGS = 
 CSCOPE = cscope
 CTAGS = ctags
-CXX = /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/clang++ --target=wasm32-wasip1 --sysroot=/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot
-CXXCPP = /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/clang++ --target=wasm32-wasip1 --sysroot=/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot -E
+CXX = g++
+CXXCPP = g++ -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -O2 -g0
+CXXFLAGS = -g -O2
 CYGPATH_W = echo
 DEFS = -DPACKAGE_NAME=\"TeX\ Live\" -DPACKAGE_TARNAME=\"tex-live\" -DPACKAGE_VERSION=\"2026-03-02\" -DPACKAGE_STRING=\"TeX\ Live\ 2026-03-02\" -DPACKAGE_BUGREPORT=\"tex-k@tug.org\" -DPACKAGE_URL=\"\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DHAVE_WCHAR_H=1 -DSTDC_HEADERS=1 -D_ALL_SOURCE=1 -D_COSMO_SOURCE=1 -D_DARWIN_C_SOURCE=1 -D_GNU_SOURCE=1 -D_HPUX_ALT_XOPEN_SOCKET_API=1 -D_NETBSD_SOURCE=1 -D_OPENBSD_SOURCE=1 -D_POSIX_PTHREAD_SEMANTICS=1 -D__STDC_WANT_IEC_60559_ATTRIBS_EXT__=1 -D__STDC_WANT_IEC_60559_BFP_EXT__=1 -D__STDC_WANT_IEC_60559_DFP_EXT__=1 -D__STDC_WANT_IEC_60559_EXT__=1 -D__STDC_WANT_IEC_60559_FUNCS_EXT__=1 -D__STDC_WANT_IEC_60559_TYPES_EXT__=1 -D__STDC_WANT_LIB_EXT2__=1 -D__STDC_WANT_MATH_SPEC_FUNCS__=1 -D_TANDEM_SOURCE=1 -D__EXTENSIONS__=1 -DHAVE_DLFCN_H=1 -DPACKAGE=\"tex-live\" -DVERSION=\"2026-03-02\" -DLT_OBJDIR=\".libs/\" -DHAVE_FSEEKO=1 -DHAVE_DIRENT_H=1 -DHAVE_ASSERT_H=1 -DHAVE_FLOAT_H=1 -DHAVE_LIMITS_H=1 -DHAVE_STDLIB_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_PUTENV=1 -DHAVE_GETCWD=1 -DHAVE_MEMCMP=1 -DHAVE_MEMCPY=1 -DHAVE_STRCHR=1 -DHAVE_STRRCHR=1 -DHAVE_DECL_ISASCII=1 -DHAVE_STRUCT_STAT_ST_MTIM=1 -DX_DISPLAY_MISSING=1
 DEPDIR = .deps
 DLLTOOL = false
 DSYMUTIL = 
-DUMPBIN = 
+DUMPBIN = :
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
@@ -365,7 +365,7 @@ INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/bin/ld
-LDFLAGS = 
+LDFLAGS = -lwasi-emulated-signal -lwasi-emulated-getpid
 LIBOBJS = 
 LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
@@ -374,11 +374,11 @@ LN_S = ln -s
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
 MAINT = #
-MAKEINFO = ${SHELL} '/home/haibib/fix-project/compatibility/texlive-source/build-aux/missing' makeinfo
+MAKEINFO = ${SHELL} '/home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/build-aux/missing' makeinfo
 MAKE_SUBDIRS = 
 MANIFEST_TOOL = :
 MKDIR_P = /usr/bin/mkdir -p
-NM = /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/llvm-nm
+NM = nm
 NMEDIT = 
 OBJDUMP = objdump
 OBJEXT = o
@@ -393,11 +393,11 @@ PACKAGE_URL =
 PACKAGE_VERSION = 2026-03-02
 PATH_SEPARATOR = :
 PKG_CONFIG = pkg-config
-RANLIB = /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/llvm-ranlib
+RANLIB = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-33.0-x86_64-linux/bin/llvm-ranlib
 SED = /usr/bin/sed
 SET_MAKE = 
 SHELL = /bin/bash
-STRIP = /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/llvm-strip
+STRIP = strip
 VERSION = 2026-03-02
 WARNING_CFLAGS = -Wimplicit -Wreturn-type
 WARNING_CXXFLAGS = -Wreturn-type -Wno-write-strings
@@ -406,14 +406,14 @@ X_CFLAGS =
 X_EXTRA_LIBS = 
 X_LIBS = 
 X_PRE_LIBS = 
-abs_builddir = /home/haibib/fix-project/compatibility/pdflatex-wasi-build/doc
-abs_srcdir = /home/haibib/fix-project/compatibility/pdflatex-wasi-build/../texlive-source/doc
-abs_top_builddir = /home/haibib/fix-project/compatibility/pdflatex-wasi-build
-abs_top_srcdir = /home/haibib/fix-project/compatibility/pdflatex-wasi-build/../texlive-source
+abs_builddir = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-build/doc
+abs_srcdir = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/doc
+abs_top_builddir = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-build
+abs_top_srcdir = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source
 ac_ct_AR = 
 ac_ct_CC = 
-ac_ct_CXX = 
-ac_ct_DUMPBIN = 
+ac_ct_CXX = g++
+ac_ct_DUMPBIN = link -dump
 am__include = include
 am__leading_dot = .
 am__quote = 
@@ -441,7 +441,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${prefix}/texmf-dist/doc/info
-install_sh = ${SHELL} /home/haibib/fix-project/compatibility/texlive-source/build-aux/install-sh
+install_sh = ${SHELL} /home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/build-aux/install-sh
 libdir = ${exec_prefix}/lib/wasm32-wasip1
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -450,19 +450,19 @@ mandir = ${prefix}/texmf-dist/doc/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /usr/local
+prefix = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-install
 program_transform_name = s,x,x,
 psdir = ${docdir}
 runstatedir = ${localstatedir}/run
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
-srcdir = ../../texlive-source/doc
+srcdir = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/doc
 subdirs =  auxdir/auxsub libs utils texk
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_build_prefix = ../
 top_builddir = ..
-top_srcdir = ../../texlive-source
+top_srcdir = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source
 info_TEXINFOS = tlbuild.texi
 tlbuild_TEXINFOS = build-tools.txt \
   tlbuild-incl/install-tl.texi tlbuild-incl/tlmgr.texi

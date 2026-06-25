@@ -13,7 +13,7 @@
 # PARTICULAR PURPOSE.
 
 
-VPATH = ../../../../texlive-source/texk/kpathsea/man
+VPATH = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/texk/kpathsea/man
 am__is_gnu_make = { \
   if test -z '$(MAKELEVEL)'; then \
     false; \
@@ -162,18 +162,18 @@ MANS = $(nodist_man1_MANS)
 am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)
 am__DIST_COMMON = $(srcdir)/Makefile.in $(top_srcdir)/../../am/man.am
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} '/home/haibib/fix-project/compatibility/texlive-source/build-aux/missing' aclocal-1.18
+ACLOCAL = ${SHELL} '/home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/build-aux/missing' aclocal-1.18
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
-AR = /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/llvm-ar
+AR = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-33.0-x86_64-linux/bin/llvm-ar
 AS = as
-AUTOCONF = ${SHELL} '/home/haibib/fix-project/compatibility/texlive-source/build-aux/missing' autoconf
-AUTOHEADER = ${SHELL} '/home/haibib/fix-project/compatibility/texlive-source/build-aux/missing' autoheader
-AUTOMAKE = ${SHELL} '/home/haibib/fix-project/compatibility/texlive-source/build-aux/missing' automake-1.18
+AUTOCONF = ${SHELL} '/home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/build-aux/missing' autoconf
+AUTOHEADER = ${SHELL} '/home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/build-aux/missing' autoheader
+AUTOMAKE = ${SHELL} '/home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/build-aux/missing' automake-1.18
 AWK = gawk
-CC = /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/clang --target=wasm32-wasip1 --sysroot=/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot -std=gnu23
+CC = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-33.0-x86_64-linux/bin/clang -std=gnu23
 CCDEPMODE = depmode=gcc3
-CFLAGS = -O2 -g0
+CFLAGS = --target=wasm32-wasip1 --sysroot=/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot -O2 -I/home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-compatibility -include /home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-compatibility/wasi-compatibility.h
 CPPFLAGS = 
 CSCOPE = cscope
 CTAGS = ctags
@@ -182,7 +182,7 @@ DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
 DLLTOOL = false
 DSYMUTIL = 
-DUMPBIN = 
+DUMPBIN = :
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
@@ -200,7 +200,7 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 KPSEVERSION = 6.4.3/dev
 KPSE_LT_VERSINFO = 10:3:4
 LD = /usr/bin/ld
-LDFLAGS = 
+LDFLAGS = -lwasi-emulated-signal -lwasi-emulated-getpid
 LIBOBJS = 
 LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
@@ -210,10 +210,10 @@ LTLIBOBJS =
 LT_OBJDIR = .libs
 LT_SYS_LIBRARY_PATH = 
 MAINT = #
-MAKEINFO = ${SHELL} '/home/haibib/fix-project/compatibility/texlive-source/build-aux/missing' makeinfo
+MAKEINFO = ${SHELL} '/home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/build-aux/missing' makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /usr/bin/mkdir -p
-NM = /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/llvm-nm
+NM = nm
 NMEDIT = 
 OBJDUMP = objdump
 OBJEXT = o
@@ -227,21 +227,21 @@ PACKAGE_TARNAME = kpathsea
 PACKAGE_URL = 
 PACKAGE_VERSION = 6.4.3/dev
 PATH_SEPARATOR = :
-RANLIB = /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/llvm-ranlib
+RANLIB = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-33.0-x86_64-linux/bin/llvm-ranlib
 SED = /usr/bin/sed
 SET_MAKE = 
 SHELL = /bin/bash
-STRIP = /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/llvm-strip
+STRIP = strip
 VERSION = 6.4.3/dev
 WARNING_CFLAGS = -Wimplicit -Wreturn-type
 WEB2CVERSION =  (TeX Live 2027/dev)
-abs_builddir = /home/haibib/fix-project/compatibility/pdflatex-wasi-build/texk/kpathsea/man
-abs_srcdir = /home/haibib/fix-project/compatibility/pdflatex-wasi-build/texk/kpathsea/../../../texlive-source/texk/kpathsea/man
-abs_top_builddir = /home/haibib/fix-project/compatibility/pdflatex-wasi-build/texk/kpathsea
-abs_top_srcdir = /home/haibib/fix-project/compatibility/pdflatex-wasi-build/texk/kpathsea/../../../texlive-source/texk/kpathsea
+abs_builddir = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-build/texk/kpathsea/man
+abs_srcdir = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/texk/kpathsea/man
+abs_top_builddir = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-build/texk/kpathsea
+abs_top_srcdir = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/texk/kpathsea
 ac_ct_AR = 
 ac_ct_CC = 
-ac_ct_DUMPBIN = 
+ac_ct_DUMPBIN = link -dump
 am__include = include
 am__leading_dot = .
 am__quote = 
@@ -269,7 +269,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${prefix}/texmf-dist/doc/info
-install_sh = ${SHELL} /home/haibib/fix-project/compatibility/texlive-source/build-aux/install-sh
+install_sh = ${SHELL} /home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/build-aux/install-sh
 libdir = ${exec_prefix}/lib/wasm32-wasip1
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -278,18 +278,18 @@ mandir = ${prefix}/texmf-dist/doc/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /usr/local
+prefix = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-install
 program_transform_name = s,x,x,
 psdir = ${docdir}
 runstatedir = ${localstatedir}/run
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
-srcdir = ../../../../texlive-source/texk/kpathsea/man
+srcdir = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/texk/kpathsea/man
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_build_prefix = ../
 top_builddir = ..
-top_srcdir = ../../../../texlive-source/texk/kpathsea
+top_srcdir = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/texk/kpathsea
 man_sources = \
 	kpseaccess.man \
 	kpsereadlink.man \

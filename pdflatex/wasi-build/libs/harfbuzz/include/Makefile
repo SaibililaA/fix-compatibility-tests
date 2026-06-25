@@ -13,7 +13,7 @@
 # PARTICULAR PURPOSE.
 
 
-VPATH = ../../../../texlive-source/libs/harfbuzz/include
+VPATH = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/libs/harfbuzz/include
 am__is_gnu_make = { \
   if test -z '$(MAKELEVEL)'; then \
     false; \
@@ -128,23 +128,23 @@ am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)
 am__DIST_COMMON = $(srcdir)/Makefile.in \
 	$(top_srcdir)/../../am/hdr_links.am
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} '/home/haibib/fix-project/compatibility/pdflatex/texlive-source/build-aux/missing' aclocal-1.18
+ACLOCAL = ${SHELL} '/home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/build-aux/missing' aclocal-1.18
 AMTAR = $${TAR-tar}
 AM_CXXFLAGS = 
 AM_DEFAULT_VERBOSITY = 1
-AUTOCONF = ${SHELL} '/home/haibib/fix-project/compatibility/pdflatex/texlive-source/build-aux/missing' autoconf
-AUTOHEADER = ${SHELL} '/home/haibib/fix-project/compatibility/pdflatex/texlive-source/build-aux/missing' autoheader
-AUTOMAKE = ${SHELL} '/home/haibib/fix-project/compatibility/pdflatex/texlive-source/build-aux/missing' automake-1.18
+AUTOCONF = ${SHELL} '/home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/build-aux/missing' autoconf
+AUTOHEADER = ${SHELL} '/home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/build-aux/missing' autoheader
+AUTOMAKE = ${SHELL} '/home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/build-aux/missing' automake-1.18
 AWK = gawk
-CC = /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/clang --target=wasm32-wasip1 --sysroot=/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot -std=gnu23
+CC = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-33.0-x86_64-linux/bin/clang -std=gnu23
 CCDEPMODE = depmode=gcc3
-CFLAGS = -O2 -g0
+CFLAGS = --target=wasm32-wasip1 --sysroot=/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot -O2 -I/home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-compatibility -include /home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-compatibility/wasi-compatibility.h
 CPPFLAGS = 
 CSCOPE = cscope
 CTAGS = ctags
-CXX = /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/clang++ --target=wasm32-wasip1 --sysroot=/home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/share/wasi-sysroot
+CXX = g++
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -O2 -g0 -fno-rtti -fno-exceptions -Wcast-align
+CXXFLAGS = -g -O2 -fno-rtti -fno-exceptions -Wcast-align
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
@@ -154,8 +154,8 @@ ECHO_T =
 ETAGS = etags
 EXEEXT = 
 GRAPHITE2_DEPEND = ${top_builddir}/../../libs/graphite2/libgraphite2.a
-GRAPHITE2_INCLUDES = -I/home/haibib/fix-project/compatibility/pdflatex/wasi-build/libs/graphite2/include -DGRAPHITE2_STATIC
-GRAPHITE2_LIBS = /home/haibib/fix-project/compatibility/pdflatex/wasi-build/libs/graphite2/libgraphite2.a
+GRAPHITE2_INCLUDES = -I/home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-build/libs/graphite2/include -DGRAPHITE2_STATIC
+GRAPHITE2_LIBS = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-build/libs/graphite2/libgraphite2.a
 HARFBUZZ_TREE = harfbuzz-src
 HAVE_CXX11 = 1
 HB_VERSION = 14.2.1
@@ -167,13 +167,13 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LDFLAGS =  -Bsymbolic-functions
+LDFLAGS = -lwasi-emulated-signal -lwasi-emulated-getpid -Bsymbolic-functions
 LIBOBJS = 
 LIBS = 
 LN_S = ln -s
 LTLIBOBJS = 
 MAINT = #
-MAKEINFO = ${SHELL} '/home/haibib/fix-project/compatibility/pdflatex/texlive-source/build-aux/missing' makeinfo
+MAKEINFO = ${SHELL} '/home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/build-aux/missing' makeinfo
 MKDIR_P = /usr/bin/mkdir -p
 OBJEXT = o
 PACKAGE = harfbuzz--tex-live-
@@ -185,21 +185,21 @@ PACKAGE_URL =
 PACKAGE_VERSION = 14.2.1
 PATH_SEPARATOR = :
 PKG_CONFIG = pkg-config
-RANLIB = /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/llvm-ranlib
+RANLIB = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-33.0-x86_64-linux/bin/llvm-ranlib
 SET_MAKE = 
 SHELL = /bin/bash
-STRIP = /home/haibib/fix-project/compatibility/wasi-sdk-33.0-x86_64-linux/bin/llvm-strip
+STRIP = strip
 VERSION = 14.2.1
 VISIBILITY_CFLAGS = -fvisibility=hidden
 VISIBILITY_CXXFLAGS = -fvisibility=hidden -fvisibility-inlines-hidden
 WARNING_CFLAGS = -Wimplicit -Wreturn-type
 WARNING_CXXFLAGS = -Wreturn-type -Wno-write-strings
-abs_builddir = /home/haibib/fix-project/compatibility/pdflatex/wasi-build/libs/harfbuzz/include
-abs_srcdir = /home/haibib/fix-project/compatibility/pdflatex/wasi-build/libs/harfbuzz/../../../texlive-source/libs/harfbuzz/include
-abs_top_builddir = /home/haibib/fix-project/compatibility/pdflatex/wasi-build/libs/harfbuzz
-abs_top_srcdir = /home/haibib/fix-project/compatibility/pdflatex/wasi-build/libs/harfbuzz/../../../texlive-source/libs/harfbuzz
+abs_builddir = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-build/libs/harfbuzz/include
+abs_srcdir = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/libs/harfbuzz/include
+abs_top_builddir = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-build/libs/harfbuzz
+abs_top_srcdir = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/libs/harfbuzz
 ac_ct_CC = 
-ac_ct_CXX = 
+ac_ct_CXX = g++
 am__include = include
 am__leading_dot = .
 am__quote = 
@@ -227,7 +227,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${prefix}/texmf-dist/doc/info
-install_sh = ${SHELL} /home/haibib/fix-project/compatibility/pdflatex/texlive-source/build-aux/install-sh
+install_sh = ${SHELL} /home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/build-aux/install-sh
 libdir = ${exec_prefix}/lib/wasm32-wasip1
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -236,18 +236,18 @@ mandir = ${prefix}/texmf-dist/doc/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /usr/local
+prefix = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-install
 program_transform_name = s,x,x,
 psdir = ${docdir}
 runstatedir = ${localstatedir}/run
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
-srcdir = ../../../../texlive-source/libs/harfbuzz/include
+srcdir = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/libs/harfbuzz/include
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_build_prefix = ../
 top_builddir = ..
-top_srcdir = ../../../../texlive-source/libs/harfbuzz
+top_srcdir = /home/haibib/fix-project/fix-compatibility-tests/pdflatex/texlive-source/libs/harfbuzz
 HARFBUZZ_SRC = $(top_srcdir)/$(HARFBUZZ_TREE)/src
 HARFBUZZ_BLD = $(top_builddir)
 hdr_links = $(HARFBUZZ_SRC)/hb.h $(HARFBUZZ_SRC)/hb-aat-layout.h \

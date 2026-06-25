@@ -1,0 +1,3 @@
+#ifndef WASI_COMPAT_SYS_WAIT_H
+#define WASI_COMPAT_SYS_WAIT_H
+#endif
