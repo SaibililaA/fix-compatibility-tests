@@ -1,0 +1,97 @@
+ctangleboot.o: ctangleboot.c \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-compatibility/wasi-compatibility.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/stdio.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/features.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/bits/alltypes.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/wasi/version.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__struct_timeval.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__typedef_suseconds_t.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__typedef_time_t.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__struct_timespec.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__struct_iovec.h \
+  /home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/stddef.h \
+  /home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/__stddef_size_t.h \
+  /home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/__stddef_null.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__seek.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/sys/types.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__typedef_clockid_t.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__typedef_clock_t.h \
+  /home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/endian.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/endian.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/sys/select.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__typedef_sigset_t.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__fd_set.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__typedef_fd_set.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__macro_FD_SETSIZE.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/errno.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__errno.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__errno_values.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/ctype.h \
+  /home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/stdbool.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/stdbool.h \
+  /home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/__stddef_header_macro.h \
+  /home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/__stddef_ptrdiff_t.h \
+  /home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/__stddef_wchar_t.h \
+  /home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/__stddef_nullptr_t.h \
+  /home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/__stddef_unreachable.h \
+  /home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/__stddef_max_align_t.h \
+  /home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/__stddef_offsetof.h \
+  /home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/stdint.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/stdint.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/bits/stdint.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/stdlib.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__functions_malloc.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__header_stdlib.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/alloca.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/string.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__header_string.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__functions_memcpy.h \
+  /home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/strings.h
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/wasi-compatibility/wasi-compatibility.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/stdio.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/features.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/bits/alltypes.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/wasi/version.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__struct_timeval.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__typedef_suseconds_t.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__typedef_time_t.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__struct_timespec.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__struct_iovec.h:
+/home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/stddef.h:
+/home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/__stddef_size_t.h:
+/home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/__stddef_null.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__seek.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/sys/types.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__typedef_clockid_t.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__typedef_clock_t.h:
+/home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/endian.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/endian.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/sys/select.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__typedef_sigset_t.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__fd_set.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__typedef_fd_set.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__macro_FD_SETSIZE.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/errno.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__errno.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__errno_values.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/ctype.h:
+/home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/stdbool.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/stdbool.h:
+/home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/__stddef_header_macro.h:
+/home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/__stddef_ptrdiff_t.h:
+/home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/__stddef_wchar_t.h:
+/home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/__stddef_nullptr_t.h:
+/home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/__stddef_unreachable.h:
+/home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/__stddef_max_align_t.h:
+/home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/__stddef_offsetof.h:
+/home/haibib/fix-project/fix-compatibility-tests/wasi-sdk-34.0-rc.1-x86_64-linux/lib/clang/23/include/stdint.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/stdint.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/bits/stdint.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/stdlib.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__functions_malloc.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__header_stdlib.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/alloca.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/string.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__header_string.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/__functions_memcpy.h:
+/home/haibib/fix-project/fix-compatibility-tests/pdflatex/../wasi-sdk-34.0-rc.1-x86_64-linux/share/wasi-sysroot/include/wasm32-wasip3/strings.h:

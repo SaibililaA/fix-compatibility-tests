@@ -1,11 +1,16 @@
 set -euo pipefail
 
-if [ -z "$1" ]; then
-    echo "Usage: $0 <filename>"
-    exit 1
+PREVIEW_VERSION="1"
+WASMTIME_FLAGS=("--dir=.")
+BINARY_NAME="tex"
+FILE_NAME="${1:-}"
+
+if [ "${1:-}" = "-p3" ]; then
+    PREVIEW_VERSION="3"
+    WASMTIME_FLAGS=("-W" "component-model-async=y" "-S" "p3" "--dir=.")
+    BINARY_NAME="tex3"
+    FILE_NAME=${2:-}
 fi
 
-FILE_NAME="$1"
-
-wasmtime --dir=. --env TFMFONTS=./tfm tex "-ini" "./$FILE_NAME"
+wasmtime "${WASMTIME_FLAGS[@]}" --env TFMFONTS=./tfm $BINARY_NAME "-ini" "./$FILE_NAME"
 dvipdf "${FILE_NAME%.tex}.dvi"
